@@ -1,9 +1,11 @@
-
+/* =========================
+   GLOBAL
+========================= */
 
 body {
     margin: 0;
     background: radial-gradient(circle at top left, #ffd699, transparent 35%), #ffffff;
-    color: #ef0000;
+    color: #63402a;
     font-family: "Nunito", sans-serif;
 }
 
@@ -13,7 +15,9 @@ body {
     margin: 0 auto;
 }
 
-
+/* =========================
+   HEADER
+========================= */
 
 .top-header {
     position: sticky;
@@ -24,62 +28,58 @@ body {
 }
 
 .nav-wrap {
-    padding: 10px;
-    border-radius: 15px;
-}
-
-/* clearfix */
-.nav-wrap:after {
-    content: "";
-    display: block;
-    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
 }
 
 .logo {
     width: 80px;
     border-radius: 10px 0px 20px;
-    float: left;
 }
 
 .navigation {
-    float: left;
-    margin-left: 40px;
+    display: flex;
+    gap: 20px;
 }
 
 .navigation a {
-    display: inline-block;
     text-decoration: none;
-    padding: 20px;
+    padding: 10px 15px;
     color: #63402a;
     font-weight: 700;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: #da5000;
 }
 
 .cart-btn {
-    float: right;
-    border-radius: 30px;
+    border: none;
+    background: none;
+    font-size: 18px;
     color: #796550;
-    padding: 15px;
-    font-weight: 700;
     cursor: pointer;
 }
 
-
+/* =========================
+   HERO
+========================= */
 
 .hero {
     padding: 60px 0 30px;
 }
 
-.hero-sec{ display: flex; gap: 20px; align-items: center;}
-
-.hero-text {
-    width: 50%;
-    float: left;
+.hero-sec {
+    display: flex;
+    gap: 40px;
+    align-items: center;
 }
 
-.hero-card {
-    width: 50%;
-    float: right;
-    text-align: right;
+.hero-sec > div {
+    flex: 1;
 }
 
 .hero-p {
@@ -87,7 +87,6 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: rgba(228, 75, 23, 0.9);
-
 }
 
 h1, h2, h3 {
@@ -98,7 +97,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 50px;
-    line-height: 1.02;
+    line-height: 1.1;
 }
 
 .hero-btn {
@@ -112,53 +111,55 @@ h1 {
     border-radius: 14px;
     padding: 12px 18px;
     margin-right: 10px;
+    transition: 0.3s;
 }
 
 .btn.asosiy {
-    background: rgb(217, 66, 2);
+    background: #d94202;
     color: #ffffff;
 }
 
 .btn.secondary {
-    background: rgb(255, 167, 15);
+    background: #ffa70f;
     color: #ffffff;
 }
 
 .btn.asosiy:hover {
-    background: rgb(150, 48, 4);
+    background: #963004;
 }
 
 .btn.secondary:hover {
-    background: rgb(188, 123, 10);
+    background: #bc7b0a;
 }
 
 .hero-card img {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     height: 400px;
+    object-fit: cover;
     border-radius: 14px 200px;
-    display: inline-block;
-   
 }
 
+/* =========================
+   SHOP
+========================= */
 
 .shop {
     padding: 60px 0;
 }
 
-.shop-sec:after {
-    content: "";
-    display: block;
-    clear: both;
+.shop-sec {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
 .shop-card {
-    width: 30%;
-    margin: 1.66%;
-    float: left;
     position: relative;
     background: #ffffff;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
     transition: 0.3s;
 }
 
@@ -170,24 +171,21 @@ h1 {
 .shop-card img {
     width: 100%;
     height: 300px;
-    display: block;
     object-fit: cover;
-    border-radius: 30px;
-    filter: grayscale(100);
-
+    filter: grayscale(100%);
+    transition: 0.3s;
 }
 
-.shop-card img:hover{
-    filter: grayscale(0);
+.shop-card:hover img {
+    filter: grayscale(0%);
 }
-
 
 .buy-btn {
     position: absolute;
     bottom: 20px;
     left: 50%;
+    transform: translateX(-50%);
     width: 120px;
-    margin-left: -60px;
     padding: 8px 0;
     border: none;
     border-radius: 30px;
@@ -201,6 +199,7 @@ h1 {
 .buy-btn:hover {
     background: #662804;
 }
+
 /* =========================
    FOOTER
 ========================= */
@@ -213,19 +212,19 @@ h1 {
     text-align: center;
 }
 
-.footer.navigation1 {
+.navigation1 {
     margin-bottom: 20px;
 }
 
-.footer.navigation1 a {
-    display: inline-block;
+.navigation1 a {
     text-decoration: none;
     color: #63402a;
     font-weight: 700;
     padding: 10px 15px;
+    transition: 0.3s;
 }
 
-.footer.navigation1 a:hover {
+.navigation1 a:hover {
     color: #da5000;
 }
 
@@ -233,4 +232,23 @@ h1 {
     font-size: 14px;
     color: #796550;
     margin: 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    .hero-sec {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .hero-card img {
+        height: 300px;
+    }
 }
