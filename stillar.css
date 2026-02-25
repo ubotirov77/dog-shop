@@ -1,0 +1,236 @@
+
+
+body {
+    margin: 0;
+    background: radial-gradient(circle at top left, #ffd699, transparent 35%), #ffffff;
+    color: #ef0000;
+    font-family: "Nunito", sans-serif;
+}
+
+.container {
+    width: 1120px;
+    max-width: 92%;
+    margin: 0 auto;
+}
+
+
+
+.top-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: #fff6e5dd;
+    backdrop-filter: blur(5px);
+}
+
+.nav-wrap {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* clearfix */
+.nav-wrap:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.logo {
+    width: 80px;
+    border-radius: 10px 0px 20px;
+    float: left;
+}
+
+.navigation {
+    float: left;
+    margin-left: 40px;
+}
+
+.navigation a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    color: #63402a;
+    font-weight: 700;
+}
+
+.cart-btn {
+    float: right;
+    border-radius: 30px;
+    color: #796550;
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+.hero {
+    padding: 60px 0 30px;
+}
+
+.hero-sec{ display: flex; gap: 20px; align-items: center;}
+
+.hero-text {
+    width: 50%;
+    float: left;
+}
+
+.hero-card {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.hero-p {
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(228, 75, 23, 0.9);
+
+}
+
+h1, h2, h3 {
+    font-family: "Baloo 2", sans-serif;
+    margin: 10px 0;
+    color: #63402a;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1.02;
+}
+
+.hero-btn {
+    margin-top: 18px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 14px;
+    padding: 12px 18px;
+    margin-right: 10px;
+}
+
+.btn.asosiy {
+    background: rgb(217, 66, 2);
+    color: #ffffff;
+}
+
+.btn.secondary {
+    background: rgb(255, 167, 15);
+    color: #ffffff;
+}
+
+.btn.asosiy:hover {
+    background: rgb(150, 48, 4);
+}
+
+.btn.secondary:hover {
+    background: rgb(188, 123, 10);
+}
+
+.hero-card img {
+    width: 600px;
+    height: 400px;
+    border-radius: 14px 200px;
+    display: inline-block;
+   
+}
+
+
+.shop {
+    padding: 60px 0;
+}
+
+.shop-sec:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.shop-card {
+    width: 30%;
+    margin: 1.66%;
+    float: left;
+    position: relative;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.shop-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.shop-card img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    border-radius: 30px;
+    filter: grayscale(100);
+
+}
+
+.shop-card img:hover{
+    filter: grayscale(0);
+}
+
+
+.buy-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 120px;
+    margin-left: -60px;
+    padding: 8px 0;
+    border: none;
+    border-radius: 30px;
+    background: #da5000;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: #662804;
+}
+/* =========================
+   FOOTER
+========================= */
+
+.main-footer {
+    background: #fff6e5;
+    padding: 40px 0 20px;
+    margin-top: 60px;
+    border-top: 2px solid #f1c38f;
+    text-align: center;
+}
+
+.footer.navigation1 {
+    margin-bottom: 20px;
+}
+
+.footer.navigation1 a {
+    display: inline-block;
+    text-decoration: none;
+    color: #63402a;
+    font-weight: 700;
+    padding: 10px 15px;
+}
+
+.footer.navigation1 a:hover {
+    color: #da5000;
+}
+
+.footer-copy {
+    font-size: 14px;
+    color: #796550;
+    margin: 0;
+}
