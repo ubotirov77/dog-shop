@@ -200,39 +200,35 @@ h1 {
     background: #662804;
 }
 
-/* =========================
-   FOOTER
-========================= */
+ .main-footer {
+            background: #fff6e5;
+            padding: 40px 0 20px;
+            margin-top: 60px;
+            border-top: 2px solid #f1c38f;
+            text-align: center;
+        }
 
-.main-footer {
-    background: #fff6e5;
-    padding: 40px 0 20px;
-    margin-top: 60px;
-    border-top: 2px solid #f1c38f;
-    text-align: center;
-}
+        .footer.navigation1 {
+            margin-bottom: 20px;
+        }
 
-.navigation1 {
-    margin-bottom: 20px;
-}
+        .footer.navigation1 a {
+            display: inline-block;
+            text-decoration: none;
+            color: #63402a;
+            font-weight: 700;
+            padding: 10px 15px;
+        }
 
-.navigation1 a {
-    text-decoration: none;
-    color: #63402a;
-    font-weight: 700;
-    padding: 10px 15px;
-    transition: 0.3s;
-}
+        .footer.navigation1 a:hover {
+            color: #da5000;
+        }
 
-.navigation1 a:hover {
-    color: #da5000;
-}
-
-.footer-copy {
-    font-size: 14px;
-    color: #796550;
-    margin: 0;
-}
+        .footer-copy {
+            font-size: 14px;
+            color: #796550;
+            margin: 0;
+        }
 
 /* =========================
    RESPONSIVE
